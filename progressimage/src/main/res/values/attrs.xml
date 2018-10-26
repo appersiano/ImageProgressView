@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressImage">
+        <attr name="showText" format="boolean" />
+        <attr name="imageShadowColor" format="color" />
+        <attr name="percentageBoxBackgroundColor" format="color" />
+        <attr name="percentageTextColor" format="color" />
+        <attr name="srcImage" format="reference"/>
+    </declare-styleable>
+</resources>
