@@ -1,7 +1,7 @@
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ImageProgressView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/7279)
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
 # ImageProgressView
-Stop using boring standard progess bar...use images!
+Stop using boring standard progress bar...use images!
 
 ## Example
 
