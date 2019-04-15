@@ -18,7 +18,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnAnimate"/>
+            app:layout_constraintTop_toBottomOf="@+id/btnAnimate"
+            app:percentageTextColor="#FF0000"/>
 
     <Button
             android:text="Animate"
@@ -29,18 +30,43 @@
             android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/tvValue"
+            app:layout_constraintEnd_toStartOf="@+id/tvValueFrom"
             android:layout_marginStart="8dp"/>
 
     <EditText
             android:autofillHints="50"
-            android:text="50"
+            android:hint="From"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/tvValue"
+            android:id="@+id/tvValueFrom"
             app:layout_constraintBaseline_toBaselineOf="@+id/btnAnimate"
             app:layout_constraintStart_toEndOf="@+id/btnAnimate"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintEnd_toEndOf="parent"
             android:inputType="numberSigned"/>
+
+    <EditText
+            android:autofillHints="50"
+            android:hint="To"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvValueTo"
+            app:layout_constraintTop_toBottomOf="@id/tvValueFrom"
+            app:layout_constraintStart_toEndOf="@+id/btnAnimate"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:inputType="numberSigned"/>
+
+    <EditText
+            android:autofillHints="1000"
+            android:hint="Duration (ms)"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDuration"
+            app:layout_constraintTop_toBottomOf="@id/tvValueTo"
+            app:layout_constraintStart_toEndOf="@+id/btnAnimate"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:inputType="numberSigned"/>
+
 </android.support.constraint.ConstraintLayout>
